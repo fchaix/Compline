@@ -33,15 +33,15 @@ function M.setup(p)
 
   -- === Base UI ===
   hi("Normal",       { fg = p.fg, bg = p.bg })
-  hi("NormalFloat",  { fg = p.fg, bg = p.bg_alt })
+  hi("NormalFloat",  { fg = p.fg_alt, bg = p.bg_alt })
   hi("FloatBorder",  { fg = p.base6, bg = p.bg_alt })
 
   hi("CursorLine",   { bg = p.base1 })
   hi("CursorColumn", { bg = p.base1 })
-  hi("LineNr",       { fg = p.base5 })
-  hi("CursorLineNr", { fg = p.yellow })
+  hi("LineNr",       { fg = p.base7 })
+  hi("CursorLineNr", { fg = p.base8 })
 
-  hi("Visual",       { bg = p.base3 })
+  hi("Visual",       { bg = p.base4 })
   hi("Search",       { bg = p.yellow, fg = p.base0 })
   hi("IncSearch",    { bg = p.orange, fg = p.base0 })
 
@@ -49,16 +49,16 @@ function M.setup(p)
   hi("Comment",      { fg = p.base6, italic = true })
   hi("String",       { fg = p.green })
   hi("Number",       { fg = p.orange })
-  hi("Function",     { fg = p.blue })
+  hi("Function",     { fg = p.cyan })
   hi("Identifier",   { fg = p.fg })
   hi("Statement",    { fg = p.red })
-  hi("Keyword",      { fg = p.red, bold = true })
-  hi("Type",         { fg = p.teal })
-  hi("Constant",     { fg = p.yellow })
+  hi("Keyword",      { fg = p.base6, bold = true })
+  hi("Type",         { fg = p.blue })
+  hi("Constant",     { fg = p.teal })
 
   -- === Diagnostics ===
   hi("DiagnosticError", { fg = p.red })
-  hi("DiagnosticWarn",  { fg = p.yellow })
+  hi("DiagnosticWarn",  { fg = p.orange })
   hi("DiagnosticInfo",  { fg = p.blue })
   hi("DiagnosticHint",  { fg = p.teal })
 
